@@ -32,14 +32,14 @@
 [control-plane] Creating static Pod manifest for "kube-scheduler"
 [etcd] Creating static Pod manifest for local etcd in "/etc/kubernetes/manifests"
 [wait-control-plane] Waiting for the kubelet to boot up the control plane as static Pods from directory "/etc/kubernetes/manifests". This can take up to 4m0s
-[apiclient] All control plane components are healthy after 7.006707 seconds
+[apiclient] All control plane components are healthy after 7.006534 seconds
 [upload-config] Storing the configuration used in ConfigMap "kubeadm-config" in the "kube-system" Namespace
 [kubelet] Creating a ConfigMap "kubelet-config-1.23" in namespace kube-system with the configuration for the kubelets in the cluster
 NOTE: The "kubelet-config-1.23" naming of the kubelet ConfigMap is deprecated. Once the UnversionedKubeletConfigMap feature gate graduates to Beta the default name will become just "kubelet-config". Kubeadm upgrade will handle this transition transparently.
 [upload-certs] Skipping phase. Please see --upload-certs
 [mark-control-plane] Marking the node kv-master-0 as control-plane by adding the labels: [node-role.kubernetes.io/master(deprecated) node-role.kubernetes.io/control-plane node.kubernetes.io/exclude-from-external-load-balancers]
 [mark-control-plane] Marking the node kv-master-0 as control-plane by adding the taints [node-role.kubernetes.io/master:NoSchedule]
-[bootstrap-token] Using token: xwfbvq.g38vkbddvrgj2elr
+[bootstrap-token] Using token: yfinma.0dydxeyx893zq8ry
 [bootstrap-token] Configuring bootstrap tokens, cluster-info ConfigMap, RBAC Roles
 [bootstrap-token] configured RBAC rules to allow Node Bootstrap tokens to get nodes
 [bootstrap-token] configured RBAC rules to allow Node Bootstrap tokens to post CSRs in order for nodes to get long term certificate credentials
@@ -68,5 +68,5 @@ Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
 
 Then you can join any number of worker nodes by running the following on each as root:
 
-kubeadm join 10.8.8.10:6443 --token xwfbvq.g38vkbddvrgj2elr \
-	--discovery-token-ca-cert-hash sha256:d3136e33f4d17b0aff72109a7c487db369b585cfe4d0b7e1cb89d8504a3b3c5c 
+kubeadm join 10.8.8.10:6443 --token yfinma.0dydxeyx893zq8ry \
+	--discovery-token-ca-cert-hash sha256:ea39a6afc21a041b1b722f505bdf94a0bac3f1e9164458ccceaff0215b8edbd4 
