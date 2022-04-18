@@ -5,7 +5,7 @@
 #               https://raw.githubusercontent.com/arturscheiner/kuberverse/master/labs/kv-k8s-cluster/master.sh
 #               https://raw.githubusercontent.com/arturscheiner/kuberverse/master/labs/kv-k8s-cluster/worker.sh
 
-BOX_IMAGE = "bento/ubuntu-20.04"
+BOX_IMAGE = "bento/ubuntu-18.04"
 MASTER_COUNT = 1
 WORKER_COUNT = 2
 POD_CIDR = "172.18.0.0/16"

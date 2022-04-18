@@ -18,7 +18,7 @@ apt-get update && apt-get install apt-transport-https ca-certificates curl softw
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
 
 ### Kubernetes Repo
-echo "deb  http://apt.kubernetes.io/  kubernetes-bionic  main" > /etc/apt/sources.list.d/kubernetes.list
+echo "deb  http://apt.kubernetes.io/  kubernetes-xenial  main" > /etc/apt/sources.list.d/kubernetes.list
 
 ### Add Docker’s official GPG key
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
